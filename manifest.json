@@ -1,5 +1,12 @@
 {
     "manifest_version": 2,
     "name": "LinkedIn hide details",
-    "version": "1.0"
+    "version": "1.0",
+    "content_scripts": [
+        {
+          "matches": ["https://www.linkedin.com/in/*"],
+          "css": ["myStyles.css"],
+          "js": ["content.js"]
+        }
+      ]
 }
